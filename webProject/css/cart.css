@@ -1,0 +1,28 @@
+/*
+CSS file for Style Formatting
+Author: Xiaojian
+*/
+
+#p {text-indent: 4em; text-align: justify;}
+
+.orderItem {
+  text-align: left;
+  font-size: 1em;
+  color: white;
+  line-height: 1em;
+  flex-flow: row nowrap;
+  border: none;
+  padding: 20px 15px 10px 20px;
+  vertical-align: middle;
+}
+
+.productList {
+  text-align: center;
+  font-size: 1em;
+  color: white;
+  line-height: 1em;
+  flex-flow: row nowrap;
+  border: none;
+  padding: 20px 15px 10px 20px;
+  vertical-align: middle;
+}

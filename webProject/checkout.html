@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>	<!--QualitySale: Welcome page
+				Author: Xiaojian
+				Date: 5/12/2020-->
+		<title>
+				Checkout
+		</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="css/cart.css" rel="stylesheet" type="text/css" />	
+	</head>
+	<body bgcolor=#00B0F0 text=white>
+
+			<img src="img/titlepicture.jpg" width=100% height=5% class="pic1"/>
+			<a href="login.html">
+			<img src="img/account.jpg" width="10%" height="10%" class="pic2"/></a>
+			<a href="cart.html">
+			<img src="img/back.jpg" alt="back_to_welcome" align=right width=10% height=10%/></a>
+			
+			<br />			
+			<div class="order_detail">
+			<table cellspacing="10" cellpadding="5">
+			<h4><center>Order Details</center></h4>
+				<thead>
+					<tr>
+						<th style="border: none" >Product</th>
+						<th style="border: none" >Price</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><center><img src="img/2-1.jpg" width="170" height="100" alt="item photo" id="photo" /><br />
+								LEGO Technic Car</center></td>
+						<td><center>$300.00</center></td>
+			</table>
+			</div>
+			
+			<div class="information">
+			<form action="insert.php" method="post">
+			<table class="billing_payment" cellspacing="10" cellpadding="5">
+			<caption>Billing Information and Payment</caption>
+					<tr>
+						<td style="border: none" colspan="4"><p style="color:white"><strong>Order ID: 3058888</strong></p></td>
+					</tr>
+                    <tr>
+						<th style="border: none" colspan="2">Billing Address</th>
+						<th style="border: none" colspan="2">Your Order</th>
+					</tr>
+				<tbody>
+					<tr>
+						<td style="border: none" >First Name<span>*<span><br />
+                        <input type="text" id="first_name" value="" required></td><br />
+						<td style="border: none" >Last Name<span>*<span><br />
+                        <input type="text" id="last_name" value="" required></td><br />
+						<td style="border: none" rowspan="2">Product</td>
+						<td style="border: none" rowspan="2">$300.00</td>
+					</tr>
+					<tr>
+						<td style="border: none" colspan="2">Address Line1<span>*<span><br />
+                        <input type="text" size="50" id="street_address1" value=""><br />    
+					</tr>	
+					<tr>
+						<td style="border: none" colspan="2">Address Line2<br />
+                        <input type="text" size="50" id="street_address2" value=""><br /> 
+						<td style="border: none" rowspan="2">Shipping</td>
+						<td style="border: none" rowspan="2">Free</td>
+					</tr>				
+					<tr>
+						<td style="border: none" colspan="2">Postcode<span>*<span><br />
+                        <input type="text" id="postcode" value=""><br />
+					</tr>				
+					<tr>
+						<td style="border: none" colspan="2">Town/City<span>*<span><br />
+                        <input type="city" id="postcode" value=""><br /> 
+						<td style="border: none" rowspan="2">Cart Subtotal</td>
+						<td style="border: none" rowspan="2">$300.00</td>						
+					</tr>				
+					<tr>
+						<td style="border: none" colspan="2">Province<span>*<span><br />
+                        <input type="text" id="state" value=""><br />	
+					</tr>
+					<tr>
+						<td style="border: none" colspan="2">Phone No<span>*<span><br />
+                        <input type="text" id="phone_number" value=""><br />
+						<td style="border: none" rowspan="2">Total</td>
+						<td style="border: none" rowspan="2"><strong>$300.00</strong></td>						
+					</tr>
+					<tr>
+						<td style="border: none" colspan="2">Email Address<span>*<span><br />
+                        <input type="email" size="50" id="email_address" value=""><br />
+					</tr>					
+				</tbody>
+			</table>
+			</form>
+			</div>
+			<div class="clearfix"></div>
+			<br /><br />
+			
+		<table class="pay">
+			<tr>
+			<td>
+			<form name="paymentForm" id="paymentForm" action="payScript.php">
+			
+			<fieldset id="payForm">
+				<legend><strong>Payment Information</strong></legend>
+				<label class="payForm">Credit Card:
+					<select id="card" name="card"/>
+						<option value="ae">American Express</option>
+						<option value="vs">VISA</option>
+						<option value="ms">MasterCard</option>
+						<option value="ot">Other</option>
+					</select>
+				</label>
+				<label class="payForm">Cardholder Name<span>*</span><input type="text" id="cname" maxlength="30"/></label>
+				<label class="payForm">Card Number<span>*</span><input type="text" id="cnum" maxlength="30"/></label>
+				<label class="payForm">Expiration Date<span>*</span>
+					<select id="month" name="mon">
+						<option value="1">January (01)</option>
+						<option value="2">Febuary (02)</option>
+						<option value="3">March (03)</option>
+						<option value="4">April (04)</option>
+						<option value="5">May (05)</option>
+						<option value="6">June (06)</option>
+						<option value="7">July (07)</option>
+						<option value="8">August (08)</option>
+						<option value="9">September (09)</option>
+						<option value="10">October (10)</option>
+						<option value="11">November (11)</option>
+						<option value="12">December (12)</option>
+					</select>
+					<select id="year" name="yr">
+						<option value="1">2020</option>
+						<option value="2">2021</option>
+						<option value="3">2022</option>
+						<option value="4">2023</option>
+						<option value="5">2024</option>
+						<option value="6">2025</option>
+						<option value="7">2026</option>
+						<option value="8">2027</option>
+						<option value="9">2028</option>
+						<option value="10">2029</option>
+					</select>			
+				</label>
+
+			<fieldset id="misc">
+				<input type="checkbox" id="customCheck1">
+                    <a href="#">Terms and conitions </a>
+
+                <input type="checkbox" id="customCheck2">
+					<a href="create_account.html">Create an accout</a>
+
+                <input type="checkbox" id="customCheck3">
+					<a href="#">Subscribe to our newsletter</a>
+			</fieldset>
+			</form>
+				</td>
+				<td>
+			<h1><center><a href="#"><font color=gold>PLACE YOUR ORDER</font></a></center></h1>
+			</td>
+			</tr>
+			</table>
+		<hr />
+		<p style="text-align: center;">
+		QualitySale &#9991; 404 Commercial Drive &#9993; Montreal, QC H4A5T6 &#9743; (800) 567-1234</p>
+	</body>
+</html>

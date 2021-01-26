@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>	<!--QualitySale: Login page
+				Author: Xiaojian
+				Date: 24/11/2020-->
+		<title>
+				Login
+		</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="css/socialmedia.css" rel="stylesheet" type="text/css" />	
+	</head>
+		<body bgcolor=#00B0F0 text=white>
+			<img src="img/titlepicture.jpg" width=100% height=5%/>
+			<a href="Welcome_Page.html">
+			<img src="img/back.jpg" alt="back_to_welcome" align=right width=10% height=10%/></a>
+			<img src="img/login.jpg" border=5 hspace=80 width=45% height=45% align="right"><br/><br/>
+			<blockquote>
+				<h1>Sign In</h1>
+				<br />
+				<form action="PHP/loginProcess.php" method="post">
+					<label class="labelblock" for="email"><b>Email</b></label>
+						<input type="text" placeholder="Enter Email" name="email" required><br /><br /><br />
+					<label class="labelblock" for="psw"><b>Password</b></label>
+						<input type="password" placeholder="Enter Password" name="psw" required><br /><br /><br />
+						<input class="button" type="submit" value="Login">
+					<label>
+						<input class="labelblock" type="checkbox" checked="checked" name="remember"> Remember me<br /><br />
+					</label>
+				</form>
+				<form action="PHP/logoutProcess.php" method="post">
+					<input class="button" type="submit" value="Logout">
+				</form>
+				<h5>
+					<a href="create_account.html">
+					Create your account</a><br /><br />
+					<a href="reset.html">
+					Forget password</a><br />
+				</h5>
+			</blockquote><br />
+			<hr />
+			  <div class="col">
+				<a href="#" class="fb btn">
+				  <img src="img/fb.jpg" width=90% height=60%></i>
+				</a>
+				<a href="#" class="twitter btn">
+				  <img src="img/tw.jpg" width=90% height=60%></i>
+				  <i class="fa fa-twitter fa-fw"></i>
+				</a>
+				<a href="#" class="google btn">
+				  <img src="img/gplus.jpg" width=90% height=60%></i>
+				  <i class="fa fa-google fa-fw"></i>
+				</a>
+			  </div>
+				<div class="clearfix"></div>
+			<hr />
+			<p style=" text-align: center;">
+			QualitySale &#9991; 404 Commercial Drive &#9993; Montreal, QC H4A5T6 &#9743; (800) 567-1234</p>
+		</body>
+<html>

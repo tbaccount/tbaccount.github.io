@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>	<!--QualitySale: Product
+				Author: Xiaojian
+				Date: 18/12/2020-->
+		<title>
+				Product
+		</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="css/product.css" rel="stylesheet" type="text/css" />
+
+	</head>
+	<body bgcolor=#00B0F0 text=white>
+
+			<img src="img/titlepicture.jpg" width=100% height=5% class="pic1"/>
+			<a href="login.html">
+			<img src="img/account.jpg" width="10%" height="10%" class="pic2"/></a>
+			<a href="Welcome_page.html">
+			<img src="img/back.jpg" alt="back_to_welcome" align=right width=10% height=10%/></a>
+			
+			<br />	
+			
+			<div class="demoimg">
+				<a href="img/product/2.jpg" />
+				<img src="img/product/2.jpg" border=4 hspace=2 width=400px height=200px/></a>
+			</div>
+
+			<div class="prosummary">
+				<h1>STAR WAR R2D1<sup>&reg</sup></h1>
+
+					<p > Customer review: 4.5/5 average based on 254 reviews.</p>
+					<p style="color:gold; font-size: 40px"><strong>CAD&dollar; 99.00</strong><br />
+					Our discount: -20%</p>
+
+					<form action="PHP/cartProcess.php" method="post">
+						<p style="text-indent:20px;">Quantity
+						<input type="number" name="quantity" value="1" min="1" max="34" placeholder="Quantity" required></p>
+						<input type="hidden" name="cartId" value="1"></p>
+						<input type="hidden" name="productId" value="2"></p>
+						<p style="text-indent:10px;"><img src="img/carticon.jpg" alt="carticon"></a>	
+						<input type="submit" name="addToCart" value="ADD TO CART"></p>
+					</form>
+			</div>
+
+		<div class="clearfix"></div>	
+
+		<hr />
+		<p style="text-align: center;">
+		QualitySale &#9991; 404 Commercial Drive &#9993; Montreal, QC H4A5T6 &#9743; (800) 567-1234</p>
+	</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>	<!--QualitySale: Category page
+				Author: Xiaojian
+				Date: 25/11/2020-->
+		<title>
+				CategoryHome
+		</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="css/product.css" rel="stylesheet" type="text/css" />
+		<style>
+			body {font-family: Arial, Helvetica, sans-serif;}
+			/* Style the navigation menu */
+			.navbar {
+			  width: 100%;
+			  background-color: #00B0F0;
+			  overflow: auto;
+			}
+
+			/* Navigation links */
+			.navbar a {
+			  float: left;
+			  color: gold;
+			  text-decoration: none;
+			  font-size: 20px;
+			  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+			  text-align: center; /* If you want the text to be centered */
+			}
+
+			/* Style the current/active link */
+			.navbar a.active {
+			  background-color: black; border-radius: 2px
+			}
+
+			/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+			@media screen and (max-width: 500px) {
+			  .navbar a {
+				float: none;
+				display: block;
+				width: 100%;
+				text-align: left; /* If you want the text to be left-aligned on small screens */
+			  }
+			}
+			
+		
+			/* The grid: Four equal columns that floats next to each other */
+			.column {
+			  float: left;
+			  width: 33%;
+
+			}
+
+			/* Style the images inside the grid */
+			.column img {border-radius:2px; border: 2px solid white;
+			  opacity: 0.8;
+			  cursor: pointer;
+			}
+
+			.column img:hover {
+			  opacity: 1;
+			}
+
+			/* Clear floats after the columns */
+			.row:after {
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+		</style>
+	</head>					
+
+		<body bgcolor=#00B0F0 text=white>
+			<img src="img/titlepicture.jpg" width=100% height=5%/>
+			<a href="login.html">
+			<img src="img/account.jpg" width="10%" height="10%" class="pic2"/></a>
+			<a href="Welcome_Page.html">
+			<img src="img/back.jpg" alt="back_to_welcome" align=right width=10% height=10%/></a>
+			<br />
+			<font face="Helvetica">
+				<div class="navbar">
+				  <a class="active" href="category_home.html">HOME</a>
+				  <a href="category_electronics.html">ELECTRONICS</a>
+				  <a href="category_foods.html">FOODS</a>
+				  <a href="category_toy.html">TOYS</a>
+				</div>
+			</font>
+			<hr />
+			<br /><br /><br />
+			<div class="row">
+			  <div class="column">
+				<a href="houseware.html">
+				<img src="img/houseware1.jpg" hspace=90 width=70% height=70% alt="furniture"></a>
+			  </div>
+			  <div class="column">
+				<a href="bedroom.html">
+				<img src="img/bedroom1.jpg" hspace=90 width=70% height=70% alt="bedroom"></a>
+			  </div>
+			  <div class="column">
+				<a href="kitchen.html">
+				<img src="img/kitchen1.jpg" hspace=90 width=70% height=70% alt="kitchen"></a>
+			  </div>
+			</div>
+
+			<FORM class="search" action="PHP/searchProcess.php" method="post">
+				<input type="search" name="searchItem" placeholder="What are you looking for today?" />
+				<input type="submit" value="submit" style="line-height: 2em; width: 80px;">
+			</FORM>				
+			<br /><br />
+			<hr />
+			<p style=" text-align: center;">
+			QualitySale &#9991; 404 Commercial Drive &#9993; Montreal, QC H4A5T6 &#9743; (800) 567-1234</p>
+		</body>
+<html>

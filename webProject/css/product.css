@@ -1,0 +1,19 @@
+/*
+CSS file for Style formatting
+Author: Xiaojian
+*/
+
+#mainContent {position: absolute; top: 175px; left: 0px; width: 1600px; padding: 5px; margin:20px}
+
+.demoimg {margin-left: 10px; float: left; border: 5px; background-color: white
+			padding: 10px; width: 900px}
+
+.prosummary {display: block; border: 2px transparent; width: 30%; float: left; margin: 0px 30px 10px 10px}
+.prosummary p {margin: 5px 5px 10px 20px; line-height: 2em;}
+.prosummary input {border: none; border-radius: 6px; line-height:2em; padding-left:10px; }
+
+.pricetag {width: 600px; display: block; border: 2px transparent; margin: 0px 30px 10px 10px}
+.pricetag {margin-top: 80px; margin-left: 15px}
+.pricetag h1 {color: gold}
+.pricetag p {margin: 5px 5px 10px 20px; line-height: 2em;}
+.pricetag input {margin: 5px 5px 10px 20px; line-height: 2em;}

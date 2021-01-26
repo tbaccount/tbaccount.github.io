@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+	<head>	<!--QualitySale: Create account
+				Author: Xiaojian
+				Date: 24/11/2020-->
+		<title>
+				Create Account
+		</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+		<body bgcolor=#00B0F0 text=white>
+			<img src="img/titlepicture.jpg" width=100% height=5%/>
+			<a href="Welcome_Page.html">
+			<img src="img/back.jpg" alt="back_to_welcome" align=right width=10% height=10%/></a>
+			<img src="img/signup.jpg" border=5 hspace=80 vspace=50 width=45% height=45% align="right"><br/><br/>
+
+			<fieldset>
+				<h1>Create Your Account</h1>
+				<br />
+				<FORM METHOD="post" ACTION="PHP\registrationFormProcess.php">
+					<label class="labelblock" for="name"><b>First Name<span style="color: red;">*</span></b></label>
+						<input type="text" placeholder="John" name="fName" required><br /><br />
+					<label class="labelblock" for="name"><b>Last Name<span style="color: red;">*</span></b></label>
+						<input type="text" placeholder="Smith" name="lName" required><br /><br />
+					<label class="labelblock" for="email"><b>Email<span style="color: red;">*</span></b></label>
+						<input type="em" placeholder="john.smith@gmail.com" name="email" required><br /><br />
+					<label class="labelblock" for="password"><b>Password<span style="color: red;">*</span><br /><p style="font-size: 5px">(6 characters with upper and lower case letter and digit)</p></b></label>
+						<input type="password" placeholder="Enter Password" name="password" required><br /><br />
+					<label class="labelblock" for="rpsw"><b>Re-enter Your Password<span style="color: red;">*</span></b></label>
+						<input type="password" placeholder="Re-enter Password" name="rpsw" required><br /><br />
+					<label class="labelblock" for="address" ><b>Address<span style="color: red;">*</span></b></label>
+						<input type="text" name="address" style="width: 400px;" required><br /><br />
+					<input class="button" type="submit" value="Create">
+				</FORM>
+
+				<input type="checkbox" checked="checked" name="terms"> Sign up means agree the <a href="https://create_account.html"><i>QualitySale consumer agreements</i></a><br /><br />
+			</fieldset>
+
+			<br />
+			<hr />
+			<p style=" text-align: center;">
+			QualitySale &#9991; 404 Commercial Drive &#9993; Montreal, QC H4A5T6 &#9743; (800) 567-1234</p>
+		</body>
+<html>
